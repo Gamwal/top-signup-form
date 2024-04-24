@@ -6,6 +6,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'norsebold';
+  src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+       url('fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 html {
   font-family: 'oswaldregular', 'Lucida Sans', sans-serif, system-ui;
   font-size: 10px;
@@ -29,13 +38,11 @@ body {
   justify-content: center;
   width: 70vw;
   height: 100vh;
+  background-image: url("images/declan-sun-unsplash.jpg");
+  background-size: contain;
 }
 
 .left-side {
-  /* background-image: url("images/declan-sun-unsplash.jpg"); */
-  background-size: contain;
-  /* background-repeat: no-repeat; */
-  background-color: green;
   min-width: 500px;
   flex-grow: 3;
 }
@@ -46,7 +53,6 @@ body {
   flex-grow: 5;
   display: flex;
   flex-direction: column;
-  /* align-items: stretch; */
 }
 
 #left-side-image {
@@ -96,7 +102,6 @@ li {
 
 input {
   width: 250px;
-  /* height: 3rem; */
   border: 1px solid lightgrey;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -130,4 +135,19 @@ input:focus {
   outline: none;
   border: 1px solid blue;
   box-shadow: 2px 2px 4px -1px rgb(89, 109, 72, 0.5)
+}
+
+.odin-logo {
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  padding: 1rem 0px;
+  font-family: 'norsebold', 'oswaldregular', sans-serif, system-ui;
+}
+
+.odin-logo > img {
+  max-height: 13rem;
 }
