@@ -169,6 +169,6 @@ input:focus {
 .photo-credit > a {
   color: white;
 }
-input:invalid {
+input[type='password']:invalid {
   border: 1px solid red;
 }
