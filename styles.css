@@ -169,4 +169,6 @@ input:focus {
 .photo-credit > a {
   color: white;
 }
-
+input:invalid {
+  border: 1px solid red;
+}
