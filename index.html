@@ -27,11 +27,11 @@
             <ul>
               <li>
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name">
+                <input type="text" id="first-name" name="first-name" pattern="^[a-zA-Z]+$">
               </li>
               <li>
                 <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name">
+                <input type="text" id="last-name" name="last-name" pattern="^[a-zA-Z]+$">
               </li>
               <li>
                 <label for="user-email">EMAIL</label>
@@ -43,21 +43,22 @@
               </li>
               <li>
                 <label for="user-pwd">PASSWORD</label>
-                <input type="password" id="user-pwd" name="user-pwd">
+                <input type="password" id="user-pwd" name="user-pwd" minlength="8">
               </li>
               <li>
                 <label for="user-conf-pwd">CONFIRM PASSWORD</label>
-                <input type="password" id="user-conf-pwd" name="user-conf-pwd">
+                <input type="password" id="user-conf-pwd" name="user-conf-pwd" minlength="8">
               </li>
             </ul>
           </div>
         </form>
       </div>
       <div class="right-side-bottom">
-        <button type="submit">Create Account</button>
+        <button type="submit" id="submit-button">Create Account</button>
         <p class="login-text">Already have an account? <a href="#">Log in</a></p>
       </div>
     </div>
   </div> 
+  <script src="script.js"></script>
 </body>
 </html>  
