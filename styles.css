@@ -101,7 +101,7 @@ li {
 
 input {
   width: 250px;
-  border: 1px solid lightgrey;
+  border: 1px solid #E5E7EB;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 1.6rem;
