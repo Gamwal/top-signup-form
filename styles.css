@@ -49,8 +49,7 @@ body {
 
 .right-side {
   background-color: aliceblue;
-  min-width: 500px;
-  flex-grow: 5;
+  min-width: 700px;
   display: flex;
   flex-direction: column;
 }
@@ -64,7 +63,7 @@ body {
   padding-top: 15rem;
   padding-bottom: 6rem;
   padding-left: var(--right-padding-left);
-  font-size: 2.5rem;
+  font-size: clamp(1.6rem, 1vh + 1.6rem, 2.5rem);;
   line-height: 1.15;
   letter-spacing: 0.1ch;
 }
@@ -125,6 +124,11 @@ button[type="submit"] {
   font-size: 1.6rem;
 }
 
+.right-side-bottom a {
+  text-decoration: none;
+  color: #596D48;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -146,8 +150,23 @@ input:focus {
   font-size: 10rem;
   padding: 1rem 0px;
   font-family: 'norsebold', 'oswaldregular', sans-serif, system-ui;
+  position: relative;
+  top: 200px;
 }
 
 .odin-logo > img {
   max-height: 13rem;
 }
+
+.photo-credit {
+  font-size: 1.6rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: calc(100vh - 200px + 1.6rem);
+}
+
+.photo-credit > a {
+  color: white;
+}
+
